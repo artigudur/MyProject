@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MVC_CRUDModelStoreContainer" CdmEntityContainer="MVC_CRUDEntities1">
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="MVC_CRUDModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="Remark" ColumnName="Remark" />
+          <ScalarProperty Name="ABC" ColumnName="ABC" />
+          <ScalarProperty Name="NewStatus" ColumnName="NewStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="MVC_CRUDModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbllogins">
+      <EntityTypeMapping TypeName="MVC_CRUDModel.Tbllogin">
+        <MappingFragment StoreEntitySet="Tbllogin">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
