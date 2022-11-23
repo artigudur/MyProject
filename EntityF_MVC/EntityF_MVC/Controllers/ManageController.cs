@@ -23,7 +23,7 @@ namespace EntityF_MVC.Controllers
         public ManageController(ApplicationUserManager userManager, ApplicationSignInManager signInManager)
         {
             UserManager = userManager;
-            SignInManager = signInManager;
+            SignInManager = signInManager; 
         }
 
         public ApplicationSignInManager SignInManager
